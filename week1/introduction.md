@@ -1,5 +1,5 @@
-Week 1
-=============
+Introduction
+================
 
 ## What is Machine Learning?
 Two definitions of Machine Learning are offered. Arthur Samuel described it as: "the field of study that 
