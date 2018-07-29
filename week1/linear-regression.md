@@ -20,3 +20,19 @@ When the target variable that we’re trying to predict is _continuous_, such as
 learning problem a **regression problem**. When y can take on only a small number of _discrete values_ (such as if, 
 given the living area, we wanted to predict if a dwelling is a house or an apartment, say), we call it a 
 **classification problem**.
+
+## Cost Function
+We can measure the accuracy of our hypothesis function by using a cost function. This takes an average difference 
+(actually a fancier version of an average) of all the results of the hypothesis with inputs from x's and the 
+actual output y's.
+
+![](./img/week1-2.png) 
+
+To break it apart, it is &frac12; x&#772; where x&#772; is the mean of the squares of h<sub>θ</sub>(x<sub>i</sub> - 
+y<sub>i</sub>), or the difference between the predicted value and the actual value.
+
+This function is otherwise called the "Squared error function", or "Mean squared error". The mean is halved 
+(&frac12;) as a convenience for the computation of the gradient descent, as the derivative term of the square 
+function will cancel out the (&frac12;) term. The following image summarizes what the cost function does:
+
+![](./img/week1-3.png) 
