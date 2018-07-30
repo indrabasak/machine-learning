@@ -110,3 +110,49 @@ _θ<sub>1</sub> := θ<sub>1</sub> − α∗0_
 ![](./img/week1-15.png)
 
 ## Gradient Descent For Linear Regression
+Note: [At 6:15 "h(x) = -900 - 0.1x" should be "h(x) = 900 - 0.1x"]
+
+When specifically applied to the case of linear regression, a new form of the gradient descent equation can 
+be derived. We can substitute our actual cost function and our actual hypothesis function and modify the equation to :
+
+![](./img/week1-17.png)
+
+
+where m is the size of the training set, θ<sub>0</sub> a constant that will be changing simultaneously with θ<sub>1</sub>
+and x<sub>i</sub>, y<sub>i</sub> are values of the given training set (data).
+
+Note that we have separated out the two cases for θ<sub>j</sub> into separate equations for θ<sub>0</sub> and 
+θ<sub>1</sub>; and that for θ<sub>1</sub> we are multiplying x<sub>i</sub> at the end due to the derivative. 
+The following is a derivation of <sup>∂</sup>&frasl;<sub>∂θ<sub>1</sub></sub> for a single example:
+
+![](./img/week1-18.png)
+
+The point of all this is that if we start with a guess for our hypothesis and then repeatedly apply these gradient 
+descent equations, our hypothesis will become more and more accurate.
+
+So, this is simply gradient descent on the original cost function J. This method looks at every example in the 
+entire training set on every step, and is called **batch gradient descent**. Note that, while gradient descent can be 
+susceptible to local minima in general, the optimization problem we have posed here for linear regression has only 
+one global, and no other local, optima; thus gradient descent always converges (assuming the learning rate α is not 
+too large) to the global minimum. Indeed, J is a convex quadratic function. Here is an example of gradient descent as 
+it is run to minimize a quadratic function.
+
+![](./img/week1-19.png)
+
+The ellipses shown above are the contours of a quadratic function. Also shown is the trajectory taken by gradient 
+descent, which was initialized at (48,30). The x’s in the figure (joined by straight lines) mark the successive 
+values of θ that gradient descent went through as it converged to its minimum.
+
+**Q**. Which of the following are true statements? Select all that apply.
+       
+  1. To make gradient descent converge, we must slowly decrease \alphaα over time.
+       
+  1. Gradient descent is guaranteed to find the global minimum for any function J(θ<sub>0</sub>, θ<sub>1</sub>).
+       
+  1. Gradient descent can converge even if α is kept fixed. (But α cannot be too large, or else it may fail to converge.)
+
+  1. For the specific choice of cost function J(θ<sub>0</sub>, θ<sub>1</sub>) used in linear regression, 
+  there are no local optima (other than the global optimum).
+  
+**A**. 3, 4
+       
