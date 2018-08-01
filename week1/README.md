@@ -11,3 +11,5 @@ Week 1
      - [Linear Regression Review](./linear-regression-quiz.md)
   
   1. [Linear Algebra](./linear-algebra.md)
+  
+      - [Linear Algebra Review](./linear-algebra-quiz.md)
