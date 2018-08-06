@@ -7,7 +7,7 @@ Week 2
   
   1. [Computing Parameters Analytically](./comp-params-analytically.md)
   
-  1. [Sumitting Programming Assignments](./submitting-prog-asgnmt.md)
+  1. [Submitting Programming Assignments](./submitting-prog-asgnmt.md)
   
   1. [Linear Regression with Multiple Variables Quiz](./multivariate-linear-regression-quiz.md)
   

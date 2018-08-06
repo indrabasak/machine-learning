@@ -1,4 +1,4 @@
-Sumitting Programming Assignments
+Submitting Programming Assignments
 ====================================
 
 ## Programming Tips From Mentors
