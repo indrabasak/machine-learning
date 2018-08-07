@@ -252,7 +252,7 @@ ans = 5
 >> 
 ```
 
-#### Load Data
+### Load Data
 
 ```
 >> pwd       % shows current directory or path
@@ -309,4 +309,130 @@ Variables in the current scope:
        priceY        47x1             376       double    
        ...   
 >> 
+>> v = priceY(1:10)     % prints first 10 row of the vector
+v =
+    3999
+    ...
+    2425
+>> 
+>> save hello.mat v;   % saves v in a file named hello.mat -some what compressed binary
+>> clear   % clears up all variables
+>> whos
+>> who
+>> load hello.mat
+>> whos
+ Variables in the current scope:
+ 
+   Attr Name          Size           Bytes      Class
+   ==== ====          ====           =====      =====
+        V             10x1              80      double
+Total is 10 elements using 80 bytes
+>>
+>> save hello.mat v -ascii;   % saves v in a file named hello.mat in human readable ASCII format
+```
+
+### Manipulate Data
+
+```
+>> A = [1 2; 3 4; 5 6]
+A =
+    1    2
+    3    4
+    5    6
+    
+>>     
+>> A(3, 2)  % means element a row 3 and column 2
+ans = 6  
+>> A (2, :) % means every element along that row/column
+ans =
+    3    4
+>> A(:,2)
+ans =
+    2
+    4
+    6
+>> A([1 3], :)   % means all elements from row 1 and 3 - more sophisticated, seldom used
+ans = 
+    1    2
+    5    6
+    
+>> A(:,2)
+ans =
+    2
+    4
+    6
+    
+>> A(:,2) = [10; 11; 12]   % assignment replacing second column
+A =
+    1    10
+    3    11
+    5    12
+    
+>> A = [A, [100; 101; 102]]; % append another column vector to the right
+A =
+    1    10    100
+    3    11    101
+    5    12    102
+    
+>>   [100; 101; 102]
+ans =
+    100
+    101
+    102
+ 
+>>  size(A)
+ans =
+    3    3  
+    
+>> A(:)  % put all elements of A into a single vector
+ans =
+    1
+    3
+    5
+   10
+   11
+   12
+  100 
+  101
+  102
+
+>> A = [1 2; 3 4; 5 6];
+>> B = [11 12; 13 14; 15 16];
+
+>> A
+A =
+    1   2   
+    3   4
+    5   6
+    
+>> B 
+B =
+    11   12   
+    13   14
+    15   16
+    
+>> C = [A B]  % concatenating matrix B to A
+C =
+    1    2    11    12
+    3    4    13    14
+    5    6    15    16
+    
+>>   C = [A; B] % puts B below A
+C =
+    1   2   
+    3   4
+    5   6
+   11  12
+   13  14
+   15  16
+   
+>>  size(C)
+ans =
+    6    2
+
+>>   [A, B]  % is same as [A B]
+ans =
+         1    2    11    12
+         3    4    13    14
+         5    6    15    16    
 ```
