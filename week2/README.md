@@ -14,8 +14,12 @@ Week 2
   1. Octave/Matlab Tutorial
       1. [Octave Basic Operations](./octave-basic-operations.md)
       
-      1. [Octave Moving Data Around](./ocatve-moving-data-around.md)
+      1. [Octave Moving Data Around](./octave-moving-data-around.md)
       
       1. [Octave Computing on Data](./octave-computing-on-data.md)
       
       1. [Octave Plotting Data](./octave-plotting-data.md)
+      
+      1. [Octave Control Statements: for, while, if statement](./octave-cntrl-stmt.md)
+      
+      1. [Octave Vectorization](./octave-vectorization.md)
