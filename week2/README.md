@@ -23,3 +23,5 @@ Week 2
       1. [Octave Control Statements: for, while, if statement](./octave-cntrl-stmt.md)
       
       1. [Octave Vectorization](./octave-vectorization.md)
+   
+  1. [Octave/Matlab Quiz](./octave-matlab-quiz.md)
