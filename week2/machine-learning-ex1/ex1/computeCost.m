@@ -13,13 +13,17 @@ J = 0;
 % Instructions: Compute the cost of a particular choice of theta
 %               You should set J to the cost.
 
+% 1. iteration example
+%for i = 1:m,
+%    h = theta(1) + theta(2)*X(i);
+%    J = J + (h - y(i))^2;
+%end;
 
-% h = 0.0;
-% for j = 1:m + 1,
-%  h = h + theta(j) + X(j);
-% end;
+% J = J/(2 * m);
 
-J = sum(( X * theta - y ) .^2 )/( 2 * m );
+% 2. Matrix multiplication example
+J = sum((X * theta - y).^2)/(2 * m);
+
 % =========================================================================
 
 end
