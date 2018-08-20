@@ -8,3 +8,5 @@ This project's relates to Coursera's Machine Learning course from Stanford Unive
   1. [Week 1](./week1/README.md)
   
   1. [Week 2](./week2/README.md)
+  
+  1. [Week 3](./week3/README.md)
