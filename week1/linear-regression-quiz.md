@@ -42,7 +42,7 @@ What is h<sub>θ</sub>(2)?
 
 **A3.** h<sub>θ</sub>(x) = θ<sub>0</sub> + θ<sub>1</sub>x
 
-h<sub>θ</sub>(2) = 0 + 1.5 x 3 = 4.5 (Wrong answer)
+h<sub>θ</sub>(2) = 0 + 1.5 x 2 = 3
 
 **Q4.** In the given figure, the cost function J(θ<sub>0</sub>, θ<sub>1</sub>) has been plotted against θ<sub>0</sub> 
 and θ<sub>1</sub>, as shown in 'Plot 2'. The contour plot for the same cost function is given in 'Plot 1'. 
